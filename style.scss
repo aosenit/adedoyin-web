@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap');
 
     $back-color: rgb(36, 35, 35);
-    $font-color:rgb(253, 253, 253);
-    $style-color: rgb(194, 194, 19);
+    $font-color:#EFEEE8;
+    $style-color: #01B391;
     $smallnav-color:rgb(20, 19, 19);
-    $header-colr:rgb(12, 11, 11);
     $inputs-color: rgb(24, 23, 23);
 
 *{
@@ -15,12 +15,17 @@
 html{
     scroll-behavior: smooth;
 }
+::-webkit-scrollbar{
+    display: none;
+}
+
 li{
     list-style: none;
 }
 
 a{
     text-decoration: none;
+    color: $font-color;
 }
 
 body{
@@ -29,15 +34,14 @@ body{
     min-width: 280px;
     width: 100%;
     max-width: 2400px;
-    font-size: 12px;
-    font-family: sans-serif;
+    font-size: 11px;
+    font-family: 'Poppins', sans-serif;
 }
 
 header{
     height: 5em;
     min-width: 280px;
     background-color: $smallnav-color;
-
     width: 100%;
     position: fixed;
     top: 0;
@@ -50,6 +54,8 @@ header{
     font-weight: 700;
     z-index: 100;
     box-sizing: border-box;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11);
+    
 
     nav{
         position: absolute;
@@ -97,9 +103,9 @@ header{
 
 .header__toggle{
    background-color: $smallnav-color;
-   padding: 0.2em .5em;
+   padding: 0.5em;
     position: relative;
-   .right, .left{
+   .right{
       position: absolute;
       top: 0; 
       left: 0;
@@ -107,12 +113,6 @@ header{
       font-size: 1.2em;
    }
 
-   .left{
-       display: none;
-   }
-   .left-show{
-       display: inline-block;
-   }
 }
 
 
@@ -126,37 +126,57 @@ section{
    text-align: center;
    position: relative;
    box-sizing: border-box;
-  
+}
 
-
+section:nth-child(even){
+    background-color:$smallnav-color;
+    background-color: $font-color;
+    color: $smallnav-color;
 }
 
 #home{
-    margin-top: 6em;
+    position: relative;
+    height: calc(100vh - 5em);
     .content{
         margin: 4em 0;
-        line-height: 1.8em;
+        line-height: 2em;
         width: 100%;
     }
     
    h1{
        color: $style-color;
-       font-size: 2.2em;
-       padding: 0.2em 0;
+       font-size: 2.5em;
+       padding: 1em 0 0.2em  ;
    }
 
    h4{
-       letter-spacing: .26em;
+       letter-spacing: .36em;
        margin-bottom: 0.2em;
    }
 
     .btn{
         border: solid 1px $font-color;
         width: 40%;
+        padding: 0.5em 1em;
         margin: 0 auto;
         font-size: .8em;
         border-radius: 5px;
+        font-weight: 700;
         background-color: $style-color;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.25), 
+                        0 2px 2px rgba(0,0,0,0.20), 
+                        0 4px 4px rgba(0,0,0,0.15), 
+                        0 8px 8px rgba(0,0,0,0.10),
+                        0 16px 16px rgba(0,0,0,0.05);
+        cursor: pointer;
+        transition: .5s all ease;
+        
+    }
+
+    .btn:hover{
+        transition: .5s all ease-in-out;
+        color: $font-color;
+        background-color: $back-color;
         
     }
 }
@@ -192,7 +212,7 @@ section{
 
             p{
                 
-                background-color: $inputs-color;
+               
                 border-radius: 10px;
                 font-size: 1.2em;
                 margin-top: 1em;
@@ -211,6 +231,11 @@ section{
         width: 200px;
         border-radius: 50%;
         position: relative;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.25), 
+        0 2px 2px rgba(0,0,0,0.20), 
+        0 4px 4px rgba(0,0,0,0.15), 
+        0 8px 8px rgba(0,0,0,0.10),
+        0 16px 16px rgba(0,0,0,0.05);
 
         img{
             height: 200px;
@@ -240,21 +265,29 @@ section{
         grid-template-columns:  1fr;
         grid-gap: 0.5em;
         width: 90%;
+      
         
     }
 
     .skill-box{
         background-color: $inputs-color;
-        padding: 1.2em 5em;
+        padding: 1.5em 5em;
         display: flex;
         flex-direction: column;
         align-items: center;
         border-radius: 10px;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.25), 
+                        0 2px 2px rgba(0,0,0,0.20), 
+                        0 4px 4px rgba(0,0,0,0.15), 
+                        0 8px 8px rgba(0,0,0,0.10),
+                        0 16px 16px rgba(0,0,0,0.05);
+          
 
 
         h2{
             font-size: 1em;
             color: $font-color;
+            margin-bottom: 1.5em;
         }
 
         div{
@@ -275,8 +308,11 @@ section{
 }
 
 #portfolio{
+    .title{
+        font-family: 700;
+    }
     .content{
-        background-color: $inputs-color;
+        background-color: $font-color;
         width: 90%;
         margin: 1em auto;
         padding: 2em 0;
@@ -294,10 +330,13 @@ section{
        align-items: center;
        box-sizing: border-box;
        justify-content: center;
-       min-height: 240px;
-       width: 95%;
+       height: 22em;
+       width: 90%;
        background-color: $smallnav-color;
-       margin-bottom: 0.5em;
+       margin-bottom: 1em;
+       padding: 1em 0 0;
+       box-shadow: 2px 2px 4px 1px rgba(0,0,0, 0.2);
+       
        
 
 
@@ -312,33 +351,39 @@ section{
            }
 
            h5{
-               font-size: 1.1em;
+               font-size: .8em;
                padding-bottom: 1em;
                width: 70%;
-               color: $style-color;
+               color: rgba($color: #aca4a4, $alpha: .8);
            }
        }
        .pf-image{
            position: relative;
-           width: 150px;
-           min-height: 250px;
-           padding: 0 1em;
+           width:15em;
+           height: 15em;
+           padding: 0;
            margin: 1em;
            border-radius: 10px;
-           background-color: $font-color;
+           background-color: $back-color;
+           transition: all 0.5s ease-in-out;
+           
        }
+
+       .pf-image:hover{
+        transform: scale(1.3);
+    }
     }
 
     img{
-        max-height: 200px;
+        height: 100%;
         position: absolute;
         width: 100%;
         top: 50%;
         transform: translate(-50%, -50%);
         left: 50%;
-        object-fit: contain;
+        object-fit: cover;
         object-position: center;
-       
+        border-radius: 10px;
     }
 }
 
@@ -352,6 +397,11 @@ section{
            border-radius: 5px;
            width: 100%;
            margin-top: 1em;
+           box-shadow: 0 1px 1px rgba(0,0,0,0.25), 
+                        0 2px 2px rgba(0,0,0,0.20), 
+                        0 4px 4px rgba(0,0,0,0.15), 
+                        0 8px 8px rgba(0,0,0,0.10),
+                        0 16px 16px rgba(0,0,0,0.05);
            
 
            span{
@@ -399,6 +449,11 @@ section{
         background-color: $smallnav-color;
         border-top: $style-color solid 2px;
         border-radius: 5px;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.25), 
+                        0 2px 2px rgba(0,0,0,0.20), 
+                        0 4px 4px rgba(0,0,0,0.15), 
+                        0 8px 8px rgba(0,0,0,0.10),
+                        0 16px 16px rgba(0,0,0,0.05);
         
 
         h2{
@@ -427,20 +482,21 @@ section{
               border-bottom: $back-color solid 1px;
               background-color: $inputs-color;
               color: $font-color;
-            
+                resize: none;
           }
 
            .form-btn{
-               padding: .5em 0;
+               padding: .5em;
                font-size: 1em;
-               font-weight: 700;
-               width: 35%;
+               font-weight: 400;
+               width: 26%;
                margin-bottom: 0;
                overflow: hidden;
                transition: .5s ease all;
                background-color: $style-color;
                margin-top: .5em;
                border-radius: 5px;
+               letter-spacing: .2em;
            }
 
            .form-btn:hover{
@@ -471,14 +527,19 @@ footer{
 
 @media screen and (min-width: 300px){
     body{
-        font-size: 14px;
+        font-size: 12px;
         transition: 0.5s ease all;
+    }
+
+    .skill-wrap{
+        width: 50%;
+        
     }
 }
 
 @media screen and (min-width: 450px){
     body{
-        font-size: 16px;
+        font-size: 13px;
         transition: 0.5s ease all;
     }
 }
@@ -488,7 +549,7 @@ footer{
        font-size: 20px;
 
     .btn{
-        width: 30%;
+        width: 12em;
         padding: .3em;
 
         
@@ -504,10 +565,11 @@ footer{
         
 #portfolio{
     .content{
-        background-color: $inputs-color;
-        width: 90%;
-        margin: 1em auto;
-        padding: 2em 0;
+        background-color: $font-color;
+        width: 80%;
+        height: 630px;
+        margin: 1em auto 2em;
+        padding: 1em 0;
         box-sizing: border-box;
         overflow: hidden;
         display: grid;
@@ -524,10 +586,10 @@ footer{
        align-items: center;
        box-sizing: border-box;
        justify-content: center;
-       min-height: 400px;
+      height: 300px;
        width: 95%;
        background-color: $smallnav-color;
-       margin-bottom: 0.5em;
+       margin-bottom: 1em;
     
        h5{
         width: 100%;
@@ -637,10 +699,12 @@ footer{
 
 @media screen and (min-width: 1020px){
   
-
-
+#home{
+    height: calc(100vh + 5em);
+}
   header{
     
+
 
     nav{
         position: relative;
@@ -661,7 +725,7 @@ footer{
             align-items: center;
 
             li{
-               transition: 0.5 ease hover;
+               transition: 0.5s ease-in-out all;
                 padding: 0;
                 border-radius: 10px;
                 margin-left: 1em;
@@ -678,6 +742,7 @@ footer{
                 color: $font-color;
                 font-size: 1em;
                 font-weight: 700;
+                letter-spacing: .2em;
             }
         }
     }
