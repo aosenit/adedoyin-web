@@ -17,6 +17,9 @@ Toggle.addEventListener('click', handleToggle)
 navLists.forEach(navList => {
     navList.addEventListener('click', () =>{
         nav.classList.toggle('show')
+        
+        
+      
     })
 })
 
@@ -30,10 +33,4 @@ scrollingUp.addEventListener('click', () => {
             behavior: 'smooth'
         }
     )
-})
-console.log(document.body)
-const theme = document.querySelector('.change-theme')
-theme.addEventListener('click', () => {
-   document.body.style.backgroundColor = "red"
-    
 })
