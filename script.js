@@ -14,14 +14,21 @@ const handleToggle = () => {
 
 Toggle.addEventListener('click', handleToggle)
 
-navLists.forEach(navList => {
-    navList.addEventListener('click', () =>{
-        nav.classList.toggle('show')
-        
-        
-      
-    })
-})
+function HandleMenus() {
+    navLists.forEach(nav => nav.classList.remove('active'))
+    this.classList.add('active')
+
+    nav.classList.toggle('show')
+  
+}
+
+navLists.forEach((nav) => { nav.addEventListener('click', HandleMenus )})
+
+// navLists.forEach(navList => {
+//     navList.addEventListener('click', () =>{
+//         nav.classList.toggle('show')
+//     })
+// })
 
 const scrollingUp = document.querySelector('.scroll-up')
 const rootElement = document.documentElement
