@@ -24,11 +24,7 @@ function HandleMenus() {
 
 navLists.forEach((nav) => { nav.addEventListener('click', HandleMenus )})
 
-// navLists.forEach(navList => {
-//     navList.addEventListener('click', () =>{
-//         nav.classList.toggle('show')
-//     })
-// })
+
 
 const scrollingUp = document.querySelector('.scroll-up')
 const rootElement = document.documentElement
