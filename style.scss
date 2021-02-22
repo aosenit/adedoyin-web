@@ -724,8 +724,50 @@ footer{
         }
     }
 
-    .header__nav{
-        position: relative;
+    header{
+    
+
+
+        nav{
+            position: relative;
+            right: 0;
+            top: 0;
+            background-color: $smallnav-color;
+            width: 80%;
+            height:  5em;
+            display: inline-block;
+            align-items: center;
+    
+            ul{
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+    
+                li{
+                   transition: 0.5s ease-in-out all;
+                    padding: 0;
+                    border-radius: 10px;
+                    margin-left: 1em;
+                    padding: 0.5em 1.5em;
+                    margin-left: 5em;
+                    font-size: .8em;
+                }
+    
+                 .active, li:hover{
+                    background-color: $style-color;
+                }
+    
+                a{
+                    color: $font-color;
+                    font-size: 1em;
+                    font-weight: 700;
+                    letter-spacing: .2em;
+                }
+            }
+        }
     }
 }
 
@@ -741,49 +783,5 @@ footer{
 
 
 }
-  header{
-    
-
-
-    nav{
-        position: relative;
-        right: 0;
-        top: 0;
-        background-color: $smallnav-color;
-        width: 80%;
-        height:  5em;
-        display: inline-block;
-        align-items: center;
-
-        ul{
-            height: 100%;
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-            align-items: center;
-
-            li{
-               transition: 0.5s ease-in-out all;
-                padding: 0;
-                border-radius: 10px;
-                margin-left: 1em;
-                padding: 0.5em 1.5em;
-                margin-left: 5em;
-                font-size: .8em;
-            }
-
-             .active, li:hover{
-                background-color: $style-color;
-            }
-
-            a{
-                color: $font-color;
-                font-size: 1em;
-                font-weight: 700;
-                letter-spacing: .2em;
-            }
-        }
-    }
-}
+  
 }

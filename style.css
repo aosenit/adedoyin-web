@@ -791,18 +791,6 @@ footer .scroll-up {
   header .header__toggle {
     display: none;
   }
-  .header__nav {
-    position: relative;
-  }
-}
-
-@media screen and (min-width: 1020px) {
-  #home {
-    height: calc(100vh + 5em);
-  }
-  #home .btn {
-    margin-top: 2em;
-  }
   header nav {
     position: relative;
     right: 0;
@@ -850,6 +838,15 @@ footer .scroll-up {
     font-size: 1em;
     font-weight: 700;
     letter-spacing: .2em;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  #home {
+    height: calc(100vh + 5em);
+  }
+  #home .btn {
+    margin-top: 2em;
   }
 }
 /*# sourceMappingURL=style.css.map */
