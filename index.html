@@ -1,202 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <title>Port-Folio</title>
-</head>
-<body class="dark light">
+  </head>
+  <body class="dark light">
     <div class="wrapper">
-        <header>
-            <div class="logo"><span>TR</span>AZ</div>
-            
-            <nav class="header__nav">
-                <ul class="header__ul">
-                    <li class="header__list active"><a href="#home" class="header__listitems ">HOME</a></li>
-                    <li class="header__list"><a href="#about" class="header__listitems">ABOUT</a></li>
-                    <li class="header__list"><a href="#portfolio" class="header__listitems">PORTFOLIO</a></li>
-                    <li class="header__list"><a href="#contact" class="header__listitems">CONTACT</a></li>
-                </ul>
-            </nav>
-    
-            <div class="header__toggle left-show">
-                <i class='bx bx-menu'></i>
+      <header>
+        <div class="logo"><span>TR</span>AZ</div>
+
+        <nav class="header__nav">
+          <ul class="header__ul">
+            <li class="header__list active">
+              <a href="#home" class="header__listitems">HOME</a>
+            </li>
+            <li class="header__list">
+              <a href="#about" class="header__listitems">ABOUT</a>
+            </li>
+            <li class="header__list">
+              <a href="#portfolio" class="header__listitems">PORTFOLIO</a>
+            </li>
+            <li class="header__list">
+              <a href="#contact" class="header__listitems">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__toggle left-show">
+          <i class="bx bx-menu"></i>
+        </div>
+      </header>
+
+      <section id="home">
+        <div class="content" id="Home">
+          <h3>HELLO, I AM</h3>
+          <h1>ADEDOYIN OSENI</h1>
+          <h4>A FRONT END DEVELOPER</h4>
+          <div class="btn">
+            <a
+              href="https://drive.google.com/file/d/1a5ZPYmg74KSplOc2gBNjRfQbmDpsy-rI/view?usp=sharing"
+              class="cv-btn"
+              >DOWNLOD CV</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <h1 class="title">ABOUT</h1>
+        <div class="content">
+          <div class="detail">
+            <h1>ADEDOYIN OSENI</h1>
+            <h4>FRONT-END DEVELOPER</h4>
+            <p>
+              I developed a keen interest for web development during the
+              covid-19 period, encouraged by my brother who is a software
+              developer. I soon got very fascinated, as i loved designs and
+              logic. I am a medical microbiologist, but the pandemic had made me
+              find a true passion in Front End Development.
+            </p>
+          </div>
+          <div class="about__image">
+            <img src="./images/home.png" alt="" />
+          </div>
+
+          <div class="skills">
+            <h2>Skills</h2>
+            <div class="skill-wrap">
+              <div class="skill-box">
+                <h2>HTML5</h2>
+                <div class="skill-image">
+                  <i class="bx bxl-html5" style="background: orangered"></i>
+                </div>
+              </div>
+              <div class="skill-box">
+                <h2>CSS3</h2>
+                <div class="skill-image">
+                  <i class="bx bxl-css3" style="background: #264de4"></i>
+                </div>
+              </div>
+              <div class="skill-box">
+                <h2>SASS</h2>
+                <div class="skill-image">
+                  <i class="bx bxl-sass" style="color: #d31a5e"></i>
+                </div>
+              </div>
+              <div class="skill-box">
+                <h2>JAVASCRIPT</h2>
+                <div class="skill-image">
+                  <i class="bx bxl-javascript" style="color: yellow"></i>
+                </div>
+              </div>
+              <div class="skill-box">
+                <h2>REACT</h2>
+                <div>
+                  <i class="bx bxl-react" style="color: #00d0f6"></i>
+                </div>
+              </div>
+              <div class="skill-box">
+                <h2>GITHUB</h2>
+                <div class="skill-image">
+                  <i class="bx bxl-github" style="color: #943ba7"></i>
+                </div>
+              </div>
             </div>
-        </header>
-    
-        <section id="home">
-            <div class="content" id="Home">
-                <h3>HELLO, I AM</h3>
-                <h1>ADEDOYIN OSENI</h1>
-                <h4>A FRONT END DEVELOPER</h4>
-                <div class="btn"><a href="https://drive.google.com/file/d/1a5ZPYmg74KSplOc2gBNjRfQbmDpsy-rI/view?usp=sharing" class="cv-btn">DOWNLOD CV</a></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio">
+        <h1 class="title">PORTFOLIO</h1>
+        <div class="content">
+          <div class="portfolio-box">
+            <a href="https://aosenit.github.io/music-app/">
+              <h3>MUSIC APP</h3>
+              <div class="pf-image">
+                <img src="./images/music-app.PNG" alt="" />
+              </div>
+              <h5>Music player</h5>
+            </a>
+          </div>
+          <div class="portfolio-box">
+            <a href="https://logisticscalapp.netlify.app/">
+              <h3>LOGISTICS COMPANY WEBPAGE</h3>
+              <div class="pf-image">
+                <img src="./images/ecommerce.jpg" alt="" />
+              </div>
+              <h5>GSAP animation</h5>
+            </a>
+          </div>
+          <div class="portfolio-box">
+            <a href="https://maxuadio.netlify.app/">
+              <h3>MULTI-PAGE ECOMMERCE APP</h3>
+              <div class="pf-image">
+                <img src="./images/maxaudio.PNG" alt="" />
+              </div>
+              <h5>Responsive</h5>
+            </a>
+          </div>
+          <div class="portfolio-box">
+            <a href="https://aosenit.github.io/scientific-calculator/">
+              <h3>SCIENTIFIC CALCULATOR</h3>
+              <div class="pf-image">
+                <img src="./images/myCalculator.PNG" alt="" />
+              </div>
+              <h5>Web calulator</h5>
+            </a>
+          </div>
+          <div class="portfolio-box">
+            <a href="https://authorweb.netlify.app/">
+              <h3>WRITER'S WEB PAGE</h3>
+              <div class="pf-image">
+                <img src="./images/sample.PNG" alt="" />
+              </div>
+              <h5>React Application</h5>
+            </a>
+          </div>
+          <div class="portfolio-box">
+            <a href="https://aosenit.github.io/nigerian-food/">
+              <h3>ONLINE FOOD-STORE APP</h3>
+              <div class="pf-image">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSEXUoNKUBqi89di9JtJ9hgl7RCRfHqRZt4Q&usqp=CAU"
+                  alt=""
+                />
+              </div>
+              <h5>E-commerce</h5>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h1 class="title">CONTACT</h1>
+        <div class="content">
+          <div class="info-wrap">
+            <h2>CONTACT INFO</h2>
+            <div class="contact-info">
+              <ul>
+                <li>
+                  <div><i class="bx bx-location-plus"></i></div>
+                  <h4>
+                    Address: <br /><span
+                      >45, okiki street, Ago Place, Okota-Lagos</span
+                    >
+                  </h4>
+                </li>
+                <li>
+                  <div><i class="bx bx-mail-send"></i></div>
+                  <h4>Email: <br /><span>creativitytraz22@gmail.com</span></h4>
+                </li>
+                <li>
+                  <div><i class="bx bxs-phone-call"></i></div>
+                  <h4>Mobile: <br /><span> 08068095923</span></h4>
+                </li>
+                <li>
+                  <div><i class="bx bxl-github"></i></div>
+                  <h4>GitHub: <br /><span>https://github.com/aosenit</span></h4>
+                </li>
+              </ul>
             </div>
-        </section>
-    
-        <section id="about">
-            <h1 class="title">ABOUT</h1>
-            <div class="content">
-               <div class="detail">
-                   <h1>ADEDOYIN OSENI</h1>
-                   <h4>FRONT-END DEVELOPER</h4>
-                   <P>I developed a keen interest for web development during the covid-19 period, encouraged by my brother who is a software developer.
-                      I soon got very fascinated, as i loved designs and logic. I am a medical microbiologist, but the pandemic had made me find a true passion in Front End Development.</P>
-               </div>
-               <div class="about__image">
-                   <img src="./images/home.png" alt="">
-                </div>
-    
-                <div class="skills">
-                    <h2>Skills</h2>
-                    <div class="skill-wrap">
-                        
-                        <div class="skill-box">
-                             <h2 >HTML5</h2>
-                            <div class="skill-image">
-                                <i class='bx bxl-html5' style="background: orangered;"></i>
-                            </div>
-                            </div>
-                            <div class="skill-box">
-                                <h2>CSS3</h2>
-                                <div class="skill-image">
-                                    <i class='bx bxl-css3'style="background:#264DE4;" ></i>
-                                </div>
-                            </div>
-                            <div class="skill-box">
-                                <h2>SASS</h2>
-                                <div class="skill-image">
-                                    <i class='bx bxl-sass'style="color: #D31A5E;" ></i>
-                                </div>
-                            </div>
-                            <div class="skill-box">
-                                <h2>JAVASCRIPT</h2>
-                                <div class="skill-image">
-                                    <i class='bx bxl-javascript' style="color: yellow;"></i>
-                                </div>
-                            </div>
-                            <div class="skill-box">
-                                <h2>REACT</h2>
-                                <div>
-                                    <i class='bx bxl-react' style="color: #00D0F6;"></i>
-                                </div>
-                            </div>
-                            <div class="skill-box">
-                                <h2>GITHUB</h2>
-                                <div class="skill-image">
-                                    <i class='bx bxl-github' style="color: #943BA7;"></i>
-                                </div>
-                            </div>
-                        </div>
-                   
-                    </div>
+          </div>
+          <div class="form-wrap">
+            <h2>MESSAGE</h2>
+            <div class="form">
+              <input type="text" placeholder="Full-Name..." />
+              <input type="email" name="" id="" placeholder="Email..." />
+              <textarea
+                name=""
+                id=""
+                rows="7"
+                placeholder="Message..."
+              ></textarea>
+              <div class="form-btn">
+                <a href="mailto:creativitytraz22@gmail.com">SEND</a>
+              </div>
             </div>
-        </section>
-    
-        <section id="portfolio">
-            <h1 class="title">PORTFOLIO</h1>
-            <div class="content">
-                <div class="portfolio-box">
-                    <a href="https://aosenit.github.io/music-app/">
-                        <h3>MUSIC APP</h3>
-                        <div class="pf-image">
-                            <img src="./images/music-app.PNG" alt="">
-                        </div>
-                        <h5>Music player</h5>   
-                    </a>
-                </div>
-                <div class="portfolio-box">
-                    <a href="https://aosenit.github.io/my-portfolio/">
-                    <h3>ANIMATED WEB PAGE</h3>
-                    <div class="pf-image">
-                        <img src="./images/animated-web.PNG" alt="">
-                    </div>
-                    <h5>GSAP animation</h5>   
-                    </a>
-                </div>
-                <div class="portfolio-box">
-                    <a href="https://aosenit.github.io/OfficialPortFolio/">
-                    <h3>PORTFOLIO WEB PAGE</h3>
-                    <div class="pf-image">
-                        <img src="./images/responive-web.PNG" alt="">
-                    </div>
-                    <h5>Responsive</h5>   
-                    </a>
-                </div>
-                <div class="portfolio-box">
-                    <a href="https://aosenit.github.io/scientific-calculator/">
-                    <h3>SCIENTIFIC CALCULATOR</h3>
-                    <div class="pf-image">
-                        <img src="./images/myCalculator.PNG" alt="">
-                    </div>
-                    <h5>Web calulator</h5>   
-                    </a>
-                </div>
-                <div class="portfolio-box">
-                    <a href="https://aosenit.github.io/Temperature-and-Currency-converter/">
-                      <h3>CONVERTER</h3>
-                      <div class="pf-image">
-                          <img src="./images/converter.PNG" alt="">
-                      </div>
-                      <h5>Web Converter</h5>   
-                    </a>
-                </div>
-                <div class="portfolio-box">
-                    <a href="https://aosenit.github.io/nigerian-food/">
-                      <h3>E-COMMERCE WEB</h3>
-                      <div class="pf-image">
-                          <img src="./images/ecommerce.jpg" alt="">
-                      </div>
-                      <h5>E-commerce</h5>   
-                    </a>
-                </div>
-            </div>
-        </section>
-    
-        <section id="contact">
-            <h1 class="title"> CONTACT </h1>
-            <div class="content">
-             <div class="info-wrap">
-                <h2>CONTACT INFO</h2>
-                <div class="contact-info">
-                   <ul>
-                       <li>
-                           <div><i class='bx bx-location-plus'></i></div>
-                           <h4>Address: <br><span>45, okiki street, Ago Place, Okota-Lagos</span></h4>
-                       </li>
-                       <li>
-                           <div><i class='bx bx-mail-send'></i></div>
-                           <h4>Email: <br><span>creativitytraz22@gmail.com</span></h4>
-                       </li>
-                       <li>
-                           <div><i class='bx bxs-phone-call'></i></div>
-                           <h4>Mobile: <br><span> 08068095923</span></h4>
-                       </li>
-                       <li>
-                           <div><i class='bx bxl-github' ></i></div>
-                           <h4>GitHub: <br><span>https://github.com/aosenit</span></h4>
-                       </li>
-                   </ul>
-               </div> 
-             </div>
-             <div class="form-wrap">
-                 <h2>MESSAGE</h2>
-                 <div class="form">
-                     <input type="text" placeholder="Full-Name...">
-                     <input type="email" name="" id="" placeholder="Email...">
-                     <textarea name="" id="" rows="7" placeholder="Message..."></textarea>
-                    <div class="form-btn"><a href="mailto:creativitytraz22@gmail.com">SEND</a></div>
-                 </div>
-             </div>
-            </div>
-        </section>
-        <footer>
-            <h5>Adedoyin  <br>&#169; 2021 copyright all right reserved</h5>
-            <div class="scroll-up"><i class='bx bxs-chevrons-up'></i></div>
-        </footer>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <h5>Adedoyin <br />&#169; 2021 copyright all right reserved</h5>
+        <div class="scroll-up"><i class="bx bxs-chevrons-up"></i></div>
+      </footer>
     </div>
-</body>
-<script src="script.js"></script>
+  </body>
+  <script src="script.js"></script>
 </html>
